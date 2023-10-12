@@ -4,8 +4,10 @@ import barbearia.style.barbearia.barbeiro.Barbeiro;
 import barbearia.style.barbearia.barbeiro.BarbeiroRepository;
 import barbearia.style.barbearia.barbeiro.DadosCadastroBabeiro;
 import jakarta.validation.Valid;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,5 +22,10 @@ public class BarbeiroController {
     @Transactional
     public void cadastrar(@RequestBody @Valid DadosCadastroBabeiro dados){
       repository.save(new Barbeiro(dados));
+    }
+
+    @GetMapping
+    public List<Barbeiro> listar(){
+        return repository.findAll();
     }
 }

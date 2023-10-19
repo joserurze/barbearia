@@ -33,7 +33,7 @@ public class BarbeiroController {
 
     @GetMapping
     public Page<DadosListagemBarbeiro> listar(@PageableDefault(size = 10,sort={"nome"}) Pageable paginacao){
-        return repository.findAll(paginacao).map(DadosListagemBarbeiro::new);
+        return repository.findAllByAtivoTrue(paginacao).map(DadosListagemBarbeiro::new);
     }
     @PutMapping
     @Transactional

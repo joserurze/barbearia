@@ -9,10 +9,10 @@ import jakarta.validation.constraints.Pattern;
 public record DadosCadastroCliente(
     @NotBlank
     String nome,
-
     @NotBlank
     String email,
     @NotBlank
+    @Pattern(regexp = "\\d{9,11}")
     String telefone,
     @NotBlank
     @Pattern(regexp = "\\d{3}\\.?\\d{3}\\.?\\d{3}\\-?\\d{2}")

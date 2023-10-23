@@ -1,6 +1,6 @@
-package barbearia.style.barbearia.cliente;
+package barbearia.style.barbearia.domain.cliente;
 
-import barbearia.style.barbearia.endereco.DadosEndereco;
+import barbearia.style.barbearia.domain.endereco.DadosEndereco;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 

@@ -1,6 +1,4 @@
-package barbearia.style.barbearia.cliente;
-
-import barbearia.style.barbearia.endereco.Endereco;
+package barbearia.style.barbearia.domain.cliente;
 
 public record DadosListagemCliente(
 

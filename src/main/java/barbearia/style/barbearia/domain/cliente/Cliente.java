@@ -1,6 +1,6 @@
-package barbearia.style.barbearia.cliente;
+package barbearia.style.barbearia.domain.cliente;
 
-import barbearia.style.barbearia.endereco.Endereco;
+import barbearia.style.barbearia.domain.endereco.Endereco;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

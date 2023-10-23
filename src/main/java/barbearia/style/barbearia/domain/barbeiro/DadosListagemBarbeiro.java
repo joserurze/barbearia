@@ -1,4 +1,4 @@
-package barbearia.style.barbearia.barbeiro;
+package barbearia.style.barbearia.domain.barbeiro;
 
 import jakarta.validation.constraints.NotNull;
 

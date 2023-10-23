@@ -1,4 +1,4 @@
-package barbearia.style.barbearia.endereco;
+package barbearia.style.barbearia.domain.endereco;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;

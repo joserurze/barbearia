@@ -6,7 +6,7 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("ValidadorHorarioAntecedenciaAgendamento")
 public class ValidadorHorarioAntecedencia implements ValidadorAgendamento{
 
 

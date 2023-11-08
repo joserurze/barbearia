@@ -15,7 +15,7 @@ public class ValidadorBarbeiroComOutraConsultaNoMesmoHorario implements Validado
     public void validar(DadosAgendamento dados) {
         var barbeiroPossuiOutraConsultaNoMesmoHorario = repository.existsByBarbeiroIdAndDataAndMotivoCancelamentoIsNull(dados.idBarbeiro(), dados.data());
         if (barbeiroPossuiOutraConsultaNoMesmoHorario) {
-            throw new ValidacaoException("Médico já possui outra consulta agendada nesse mesmo horário");
+            throw new ValidacaoException("Barbeiro já possui outra consulta agendada nesse mesmo horário");
         }
     }
 

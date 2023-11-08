@@ -20,6 +20,8 @@ public interface BarbeiroRepository extends JpaRepository<Barbeiro, Long> {
             select a.barbeiro.id from Agendamento a
             where
             a.data = :data
+            and
+            a.motivoCancelamento is null
         )
         order by rand()
         limit 1

@@ -20,7 +20,7 @@ public class ValidadorBarbeiroAtivo implements ValidadorAgendamento {
 
         var barbeiroEstaAtivo = repository.findAtivoById(dados.idBarbeiro());
         if (!barbeiroEstaAtivo) {
-            throw new ValidacaoException("Consulta não pode ser agendada com médico excluído");
+            throw new ValidacaoException("Consulta não pode ser agendada com barbeiro excluído");
         }
     }
 
